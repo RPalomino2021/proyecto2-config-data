@@ -16,7 +16,7 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: client
-          uri: lb://client
+        - id: micro01-client
+          uri: lb://micro01-client
           predicates:
             - Path=/api/v1/client/**
