@@ -14,6 +14,6 @@ spring:
           enabled: true
       routes:
         - id: client
-          uri: lb://micro01-client
+          uri: http://localhost:8091
           predicates:
             - Path=/api/v1/client/**
