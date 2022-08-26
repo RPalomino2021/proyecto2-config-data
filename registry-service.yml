@@ -4,8 +4,3 @@ server:
 eureka:
   instance:
     hostname: registry-service
-  client:
-    registerWithEureka: true
-    fetchRegistry: true
-    serviceUrl:
-      defaultZone: http://registry-service:8761/eureka
