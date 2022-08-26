@@ -11,7 +11,7 @@ endpoints:
 
 eureka:
   instance:
-    hostname: gateway
+    hostname: api-gateway
   client:
     registerWithEureka: true
     fetchRegistry: true
