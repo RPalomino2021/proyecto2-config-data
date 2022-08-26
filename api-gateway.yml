@@ -4,6 +4,11 @@ server:
 eureka:
     instance:
       hostname: registry-service
+client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://registry-service/eureka
 spring:
   cloud:
     gateway:
