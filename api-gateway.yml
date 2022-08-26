@@ -15,7 +15,15 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://service-discovery:8761/eureka/
-      
-
-
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: micro01-client
+          uri: lb://micro01-client
+          predicates:
+            - Path=/api/v1/client/**
 
