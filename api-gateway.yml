@@ -2,13 +2,8 @@ server:
   port: 8088
 
 eureka:
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    serviceUrl:
-      default-zone: http://localhost:8761/eureka
     instance:
-      hostname: localhost
+      hostname: registry-service
 spring:
   cloud:
     gateway:
